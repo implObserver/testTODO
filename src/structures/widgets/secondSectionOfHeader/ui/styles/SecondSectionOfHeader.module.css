@@ -1,0 +1,13 @@
+.header {
+    display: grid;
+    width: 80vw;
+    grid-template-columns: 1fr min-content;
+    justify-content: space-around;
+    padding-left: calc(var(--responsive-size)*10);
+    max-width: 1500px;
+}
+
+.title {
+    display: grid;
+    width: max-content;
+}

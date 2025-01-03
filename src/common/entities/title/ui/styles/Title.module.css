@@ -1,0 +1,4 @@
+.title {
+    display: flex;
+    font-size: calc(var(--responsive-size)*3);
+}
