@@ -1,0 +1,1 @@
+export const selectTasks = (state: { tasks: Tasks }) => state.tasks.tasks;
