@@ -1,0 +1,10 @@
+.section {
+    display: flex;
+    width: calc(var(--responsive-size)*12);
+    padding: var(--responsive-size);
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--responsive-size);
+    border: calc(var(--responsive-size)*0.2) #62c267 solid;
+    color: #62c267;
+}

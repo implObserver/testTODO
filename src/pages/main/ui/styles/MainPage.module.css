@@ -3,4 +3,5 @@
     padding: var(--responsive-size);
     width: inherit;
     height: 100%;
+    gap: var(--responsive-size);
 }

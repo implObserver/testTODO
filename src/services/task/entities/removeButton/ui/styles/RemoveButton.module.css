@@ -1,0 +1,8 @@
+.button {
+    display: flex;
+    width: calc(var(--responsive-size)*5);
+    height: calc(var(--responsive-size)*5);
+    border-radius: var(--responsive-size);
+    border: calc(var(--responsive-size)*0.4) #a9b2bd solid;
+    cursor: pointer;
+}
