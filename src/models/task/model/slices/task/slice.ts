@@ -1,4 +1,4 @@
-import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { createSlice, current, PayloadAction } from "@reduxjs/toolkit";
 import { initialState } from "./defaultState";
 import { getTasks } from "../../thunks/get/getTasks";
 import { addTask } from "../../thunks/post/addTask";
@@ -34,8 +34,12 @@ export const tasksSlice = createSlice({
             if (action.payload.isError) {
 
             } else {
-                const task = action.payload.data.message;
-                state.tasks.push(task);
+                const newTask = action.payload.data.message;
+                const index = state.tasks.findIndex(task => task.id === newTask.id);
+                const index2 = state.tasks.findIndex(task => task.name === newTask.name);
+                if (index === -1 && index2 === -1) {
+                    state.tasks.push(newTask);
+                }
             }
         }
 
@@ -45,7 +49,9 @@ export const tasksSlice = createSlice({
             } else {
                 const newTask = action.payload.data.message;
                 const index = state.tasks.findIndex(task => task.id === newTask.id);
-                state.tasks.splice(index, 1, newTask);
+                if (index !== -1) {
+                    state.tasks.splice(index, 1, newTask);
+                }
             }
         }
 
@@ -55,7 +61,9 @@ export const tasksSlice = createSlice({
             } else {
                 const newTask = action.payload.data.message;
                 const index = state.tasks.findIndex(task => task.id === newTask.id);
-                state.tasks.splice(index, 1);
+                if (index !== -1) {
+                    state.tasks.splice(index, 1);
+                }
             }
         }
 

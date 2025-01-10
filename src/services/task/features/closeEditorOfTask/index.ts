@@ -1,0 +1,1 @@
+export { CloseEditorOfTask } from './ui/CloseEditorOfTask'

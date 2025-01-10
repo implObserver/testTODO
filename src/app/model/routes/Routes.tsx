@@ -12,7 +12,7 @@ export const routes = [
             },
             {
                 path: "/tasks",
-                element: <></>,
+                element:  <MainPage />,
             },
             {
                 path: "/task/:id",

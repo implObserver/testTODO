@@ -1,0 +1,29 @@
+.list {
+    display: grid;
+    width: calc(var(--responsive-size)*90);
+    max-width: calc(var(--responsive-size)*90);
+}
+
+.header {
+    display: grid;
+    padding-top: var(--responsive-size);
+    padding-bottom: var(--responsive-size);
+    grid-template-columns: 10% 45% 25% 10% 10%;
+    align-items: center;
+    justify-content: center;
+    border-bottom: calc(var(--responsive-size)*0.3) black solid;
+}
+
+.cell {
+    display: grid;
+    font-size: calc(var(--responsive-size)*2);
+    justify-content: center;
+    align-items: center;
+}
+
+.tasks {
+    display: grid;
+    padding-top: var(--responsive-size);
+    padding-bottom: var(--responsive-size);
+    gap:var(--responsive-size)
+}

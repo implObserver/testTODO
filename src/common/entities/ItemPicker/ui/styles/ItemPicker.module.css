@@ -1,0 +1,5 @@
+.item {
+    display: grid;
+    width: min-content;
+    margin-top: calc(var(--responsive-size)*0.1);
+}

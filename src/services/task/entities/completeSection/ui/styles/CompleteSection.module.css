@@ -1,10 +1,25 @@
 .section {
     display: flex;
     width: calc(var(--responsive-size)*12);
+    height: calc(var(--responsive-size)*4.2);
+    font-size: calc(var(--responsive-size)*1.5);
     padding: var(--responsive-size);
     justify-content: center;
     align-items: center;
     border-radius: var(--responsive-size);
     border: calc(var(--responsive-size)*0.2) #62c267 solid;
     color: #62c267;
+    cursor: pointer;
+    background-color: white;
+}
+
+.section:hover {
+    background-color: #62c267;
+    color: white;
+}
+
+@media (prefers-color-scheme: dark) {
+    .section {
+        background-color: var(--color__dark-theme);
+    }
 }

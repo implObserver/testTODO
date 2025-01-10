@@ -1,0 +1,13 @@
+.task {
+    display: grid;
+    grid-template-columns: 10% 45% 25% 10% 10%;
+    align-items: center;
+    margin-bottom: var(--responsive-size);
+}
+
+.cell {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: calc(var(--responsive-size)*1.5);
+}

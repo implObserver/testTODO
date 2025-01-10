@@ -8,10 +8,19 @@
 
 .open {
     display: block;
-    position: absolute;
-    width: 100%;
+    position: relative;
+    width: min-content;
+    border-radius: var(--responsive-size);
     animation-duration: 150ms;
     animation-name: open;
+    background-color: white;
+    padding-bottom: var(--responsive-size);
+}
+
+@media (prefers-color-scheme: dark) {
+    .open {
+        background-color: var(--color__dark-theme);
+    }
 }
 
 .margin {

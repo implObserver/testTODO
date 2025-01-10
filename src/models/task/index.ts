@@ -1,0 +1,6 @@
+export { selectTasks } from './model/slices/task/selectors'
+export { tasksReducer, tasksActions } from './model/slices/task/slice'
+export { deleteTask } from './model/thunks/delete/deleteTask'
+export { getTasks } from './model/thunks/get/getTasks'
+export { addTask } from './model/thunks/post/addTask'
+export { editTask } from './model/thunks/put/editTask'

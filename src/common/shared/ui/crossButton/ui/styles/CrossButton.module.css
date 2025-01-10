@@ -1,0 +1,19 @@
+.button {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    appearance: none;
+    height: 100%;
+    width: 100%;
+    border-radius: inherit;
+    background-image: url(../../../../assets/cancel.svg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+@media (prefers-color-scheme: dark) {
+    .button>button {
+        color: var(--color__dark-text_color)
+    }
+}

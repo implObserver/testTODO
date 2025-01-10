@@ -1,0 +1,13 @@
+.button {
+    display: flex;
+    width: calc(var(--responsive-size)*4.2);
+    height: calc(var(--responsive-size)*4.2);
+    border-radius: var(--responsive-size);
+    border: calc(var(--responsive-size)*0.2) #fa3c3c solid;
+    cursor: pointer;
+    transition: transform 200ms ease-in-out;
+}
+
+.button:hover {
+    transform: translateY(calc(var(--responsive-size)*-0.3));
+}

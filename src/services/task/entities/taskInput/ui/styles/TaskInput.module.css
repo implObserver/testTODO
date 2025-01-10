@@ -1,0 +1,19 @@
+.input {
+    display: grid;
+    appearance: none !important;
+    width: calc(var(--responsive-size)*40);
+    height: min-content;
+    font-size: calc(var(--responsive-size)*1.5);
+    outline: none;
+    padding-left: var(--responsive-size);
+}
+
+.input::placeholder {
+    font-size: calc(var(--responsive-size)*1.5);
+}
+
+@media (prefers-color-scheme: dark) {
+    .input {
+        background-color: var(--color__dark-theme);
+    }
+}

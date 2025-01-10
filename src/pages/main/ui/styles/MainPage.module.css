@@ -1,7 +1,8 @@
 .page__main {
     display: grid;
     padding: var(--responsive-size);
-    width: inherit;
+    width: 100%;
+    justify-content: center;
     height: 100%;
     gap: var(--responsive-size);
 }
